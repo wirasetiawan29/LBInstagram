@@ -15,6 +15,14 @@
 		04229C8823113AED00D287ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04229C8623113AED00D287ED /* LaunchScreen.storyboard */; };
 		04229C9323113AED00D287ED /* LBInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229C9223113AED00D287ED /* LBInstagramTests.swift */; };
 		04229C9E23113AED00D287ED /* LBInstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229C9D23113AED00D287ED /* LBInstagramUITests.swift */; };
+		04229CBA231142D400D287ED /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CB9231142D400D287ED /* UserModel.swift */; };
+		04229CBE231143EF00D287ED /* LBConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CBD231143EF00D287ED /* LBConfig.swift */; };
+		04229CC02311456F00D287ED /* LBSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CBF2311456F00D287ED /* LBSplashViewController.swift */; };
+		04229CC42311463A00D287ED /* LBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CC22311463A00D287ED /* LBLoginViewController.swift */; };
+		04229CC52311463A00D287ED /* LBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CC32311463A00D287ED /* LBLoginViewController.xib */; };
+		04229CC823114E3A00D287ED /* LBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CC623114E3A00D287ED /* LBHomeViewController.swift */; };
+		04229CC923114E3A00D287ED /* LBHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CC723114E3A00D287ED /* LBHomeViewController.xib */; };
+		04229CCB2311514A00D287ED /* LBConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CCA2311514A00D287ED /* LBConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		04229C9923113AED00D287ED /* LBInstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBInstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04229C9D23113AED00D287ED /* LBInstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBInstagramUITests.swift; sourceTree = "<group>"; };
 		04229C9F23113AED00D287ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04229CB9231142D400D287ED /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		04229CBD231143EF00D287ED /* LBConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBConfig.swift; sourceTree = "<group>"; };
+		04229CBF2311456F00D287ED /* LBSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBSplashViewController.swift; sourceTree = "<group>"; };
+		04229CC22311463A00D287ED /* LBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLoginViewController.swift; sourceTree = "<group>"; };
+		04229CC32311463A00D287ED /* LBLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBLoginViewController.xib; sourceTree = "<group>"; };
+		04229CC623114E3A00D287ED /* LBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBHomeViewController.swift; sourceTree = "<group>"; };
+		04229CC723114E3A00D287ED /* LBHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBHomeViewController.xib; sourceTree = "<group>"; };
+		04229CCA2311514A00D287ED /* LBConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,9 @@
 		04229C7923113AEB00D287ED /* LBInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				04229CBC231143DE00D287ED /* Utilities */,
+				04229CAF231141F400D287ED /* Model */,
+				04229CAB2311409000D287ED /* Screen */,
 				04229C7A23113AEB00D287ED /* AppDelegate.swift */,
 				04229C7C23113AEB00D287ED /* ViewController.swift */,
 				04229C7E23113AEB00D287ED /* Main.storyboard */,
@@ -126,6 +145,51 @@
 				04229C9F23113AED00D287ED /* Info.plist */,
 			);
 			path = LBInstagramUITests;
+			sourceTree = "<group>";
+		};
+		04229CAB2311409000D287ED /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				04229CC12311461E00D287ED /* Home */,
+				04229CAC231140A800D287ED /* Login */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		04229CAC231140A800D287ED /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04229CBF2311456F00D287ED /* LBSplashViewController.swift */,
+				04229CC22311463A00D287ED /* LBLoginViewController.swift */,
+				04229CC32311463A00D287ED /* LBLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04229CAF231141F400D287ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04229CB9231142D400D287ED /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04229CBC231143DE00D287ED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04229CBD231143EF00D287ED /* LBConfig.swift */,
+				04229CCA2311514A00D287ED /* LBConstant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		04229CC12311461E00D287ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04229CC623114E3A00D287ED /* LBHomeViewController.swift */,
+				04229CC723114E3A00D287ED /* LBHomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04229CC52311463A00D287ED /* LBLoginViewController.xib in Resources */,
 				04229C8823113AED00D287ED /* LaunchScreen.storyboard in Resources */,
 				04229C8523113AED00D287ED /* Assets.xcassets in Resources */,
+				04229CC923114E3A00D287ED /* LBHomeViewController.xib in Resources */,
 				04229C8023113AEB00D287ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +327,13 @@
 			files = (
 				04229C7D23113AEB00D287ED /* ViewController.swift in Sources */,
 				04229C7B23113AEB00D287ED /* AppDelegate.swift in Sources */,
+				04229CBA231142D400D287ED /* UserModel.swift in Sources */,
+				04229CCB2311514A00D287ED /* LBConstant.swift in Sources */,
+				04229CC823114E3A00D287ED /* LBHomeViewController.swift in Sources */,
 				04229C8323113AEB00D287ED /* LBInstagram.xcdatamodeld in Sources */,
+				04229CBE231143EF00D287ED /* LBConfig.swift in Sources */,
+				04229CC02311456F00D287ED /* LBSplashViewController.swift in Sources */,
+				04229CC42311463A00D287ED /* LBLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
