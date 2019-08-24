@@ -10,7 +10,6 @@ import UIKit
 
 class UserModel: NSObject {
 
-
     var userId: Int64 = 0
     var userLocalId: Int64 = Int64(Date.init().timeIntervalSince1970)
     var userName: String  = ""

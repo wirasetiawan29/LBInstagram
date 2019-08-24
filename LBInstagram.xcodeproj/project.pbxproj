@@ -23,6 +23,17 @@
 		04229CC823114E3A00D287ED /* LBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CC623114E3A00D287ED /* LBHomeViewController.swift */; };
 		04229CC923114E3A00D287ED /* LBHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CC723114E3A00D287ED /* LBHomeViewController.xib */; };
 		04229CCB2311514A00D287ED /* LBConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CCA2311514A00D287ED /* LBConstant.swift */; };
+		04229CD123115D6F00D287ED /* LBImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CCF23115D6F00D287ED /* LBImageListViewController.swift */; };
+		04229CD223115D6F00D287ED /* LBImageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CD023115D6F00D287ED /* LBImageListViewController.xib */; };
+		04229CD523115D8600D287ED /* LBProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CD323115D8600D287ED /* LBProfileDetailViewController.swift */; };
+		04229CD623115D8600D287ED /* LBProfileDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CD423115D8600D287ED /* LBProfileDetailViewController.xib */; };
+		04229CDA23115D9C00D287ED /* LBImageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CD823115D9C00D287ED /* LBImageDetailViewController.xib */; };
+		04229CDC23115DCA00D287ED /* ImageLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CDB23115DCA00D287ED /* ImageLocationModel.swift */; };
+		04229CE323116E6900D287ED /* LBImageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CE123116E6900D287ED /* LBImageListTableViewCell.swift */; };
+		04229CE423116E6900D287ED /* LBImageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CE223116E6900D287ED /* LBImageListTableViewCell.xib */; };
+		04229CED23118A7500D287ED /* LBImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CEC23118A7500D287ED /* LBImageDetailViewController.swift */; };
+		04229CEF23118AA900D287ED /* LBImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04229CEE23118AA900D287ED /* LBImageSlider.swift */; };
+		04229CF123118AB800D287ED /* LBImageSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04229CF023118AB800D287ED /* LBImageSlider.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +76,17 @@
 		04229CC623114E3A00D287ED /* LBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBHomeViewController.swift; sourceTree = "<group>"; };
 		04229CC723114E3A00D287ED /* LBHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBHomeViewController.xib; sourceTree = "<group>"; };
 		04229CCA2311514A00D287ED /* LBConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBConstant.swift; sourceTree = "<group>"; };
+		04229CCF23115D6F00D287ED /* LBImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBImageListViewController.swift; sourceTree = "<group>"; };
+		04229CD023115D6F00D287ED /* LBImageListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBImageListViewController.xib; sourceTree = "<group>"; };
+		04229CD323115D8600D287ED /* LBProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBProfileDetailViewController.swift; sourceTree = "<group>"; };
+		04229CD423115D8600D287ED /* LBProfileDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBProfileDetailViewController.xib; sourceTree = "<group>"; };
+		04229CD823115D9C00D287ED /* LBImageDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBImageDetailViewController.xib; sourceTree = "<group>"; };
+		04229CDB23115DCA00D287ED /* ImageLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLocationModel.swift; sourceTree = "<group>"; };
+		04229CE123116E6900D287ED /* LBImageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBImageListTableViewCell.swift; sourceTree = "<group>"; };
+		04229CE223116E6900D287ED /* LBImageListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBImageListTableViewCell.xib; sourceTree = "<group>"; };
+		04229CEC23118A7500D287ED /* LBImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBImageDetailViewController.swift; sourceTree = "<group>"; };
+		04229CEE23118AA900D287ED /* LBImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBImageSlider.swift; sourceTree = "<group>"; };
+		04229CF023118AB800D287ED /* LBImageSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBImageSlider.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				04229CB9231142D400D287ED /* UserModel.swift */,
+				04229CDB23115DCA00D287ED /* ImageLocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,10 +209,52 @@
 		04229CC12311461E00D287ED /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				04229CCE231159DA00D287ED /* Detail */,
+				04229CCD231159D400D287ED /* Profile */,
+				04229CCC231159C900D287ED /* List */,
 				04229CC623114E3A00D287ED /* LBHomeViewController.swift */,
 				04229CC723114E3A00D287ED /* LBHomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		04229CCC231159C900D287ED /* List */ = {
+			isa = PBXGroup;
+			children = (
+				04229CDF23116E2500D287ED /* Cell */,
+				04229CCF23115D6F00D287ED /* LBImageListViewController.swift */,
+				04229CD023115D6F00D287ED /* LBImageListViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		04229CCD231159D400D287ED /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				04229CD323115D8600D287ED /* LBProfileDetailViewController.swift */,
+				04229CD423115D8600D287ED /* LBProfileDetailViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		04229CCE231159DA00D287ED /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				04229CEC23118A7500D287ED /* LBImageDetailViewController.swift */,
+				04229CD823115D9C00D287ED /* LBImageDetailViewController.xib */,
+				04229CEE23118AA900D287ED /* LBImageSlider.swift */,
+				04229CF023118AB800D287ED /* LBImageSlider.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		04229CDF23116E2500D287ED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04229CE123116E6900D287ED /* LBImageListTableViewCell.swift */,
+				04229CE223116E6900D287ED /* LBImageListTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,10 +361,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04229CF123118AB800D287ED /* LBImageSlider.xib in Resources */,
 				04229CC52311463A00D287ED /* LBLoginViewController.xib in Resources */,
 				04229C8823113AED00D287ED /* LaunchScreen.storyboard in Resources */,
 				04229C8523113AED00D287ED /* Assets.xcassets in Resources */,
+				04229CDA23115D9C00D287ED /* LBImageDetailViewController.xib in Resources */,
 				04229CC923114E3A00D287ED /* LBHomeViewController.xib in Resources */,
+				04229CD623115D8600D287ED /* LBProfileDetailViewController.xib in Resources */,
+				04229CD223115D6F00D287ED /* LBImageListViewController.xib in Resources */,
+				04229CE423116E6900D287ED /* LBImageListTableViewCell.xib in Resources */,
 				04229C8023113AEB00D287ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,13 +396,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				04229C7D23113AEB00D287ED /* ViewController.swift in Sources */,
+				04229CD523115D8600D287ED /* LBProfileDetailViewController.swift in Sources */,
 				04229C7B23113AEB00D287ED /* AppDelegate.swift in Sources */,
 				04229CBA231142D400D287ED /* UserModel.swift in Sources */,
 				04229CCB2311514A00D287ED /* LBConstant.swift in Sources */,
 				04229CC823114E3A00D287ED /* LBHomeViewController.swift in Sources */,
 				04229C8323113AEB00D287ED /* LBInstagram.xcdatamodeld in Sources */,
 				04229CBE231143EF00D287ED /* LBConfig.swift in Sources */,
+				04229CE323116E6900D287ED /* LBImageListTableViewCell.swift in Sources */,
+				04229CDC23115DCA00D287ED /* ImageLocationModel.swift in Sources */,
 				04229CC02311456F00D287ED /* LBSplashViewController.swift in Sources */,
+				04229CD123115D6F00D287ED /* LBImageListViewController.swift in Sources */,
+				04229CED23118A7500D287ED /* LBImageDetailViewController.swift in Sources */,
+				04229CEF23118AA900D287ED /* LBImageSlider.swift in Sources */,
 				04229CC42311463A00D287ED /* LBLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,4 +28,31 @@ class LBConfig: NSObject {
         UserDefaults.standard.removeObject(forKey: LBConstant.keyEmail)
         UserDefaults.standard.synchronize()
     }
+
+    class func generator() -> [ImageLocationModel] {
+        var result:[ImageLocationModel] = []
+
+
+        let images: [UIImage] = [UIImage(named: "Image1")!,
+                                 UIImage(named: "Image2")!,
+                                 UIImage(named: "Image3")!,
+                                 UIImage(named: "Image4")!]
+
+        for i in 0...3 {
+            let model = ImageLocationModel()
+            if i == 0 {
+                model.imageLocationThumbnail = "Image1"
+            } else if i == 1 {
+                model.imageLocationThumbnail = "Image2"
+            } else if i == 2 {
+                model.imageLocationThumbnail = "Image3"
+            } else {
+                model.imageLocationThumbnail = "Image4"
+            }
+            model.imageDatas = images
+            result.append(model)
+        }
+
+        return result
+    }
 }
